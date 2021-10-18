@@ -45,7 +45,7 @@ int main()
 		cin>>arr[i];
 	}
 	
-	cout << "\nSorted array Using Selection Sort (Time Complexity O(n)): " <<endl;
+	cout << "\nSorted array Using Selection Sort (Time Complexity O(n*n)): " <<endl;
 	selectionSort(arr, n);
 	
 	return 0;

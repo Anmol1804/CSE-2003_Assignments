@@ -7,13 +7,13 @@ void insertionSort(int arr[], int n)
     for (i = 1; i < n; i++)
     {
         ele = arr[i];
-        j = i;
-        while (j >= 0 && arr[j-1] > ele)
+        j = i - 1;
+        while (j >= 0 && arr[j] > ele)
         {
-            arr[j] = arr[j-1];
+            arr[j+1] = arr[j];
             j = j - 1;
         }
-        arr[j] = ele;
+        arr[j+1] = ele;
     }
     
 	
@@ -40,7 +40,7 @@ int main()
 		cin>>arr[i];
 	}
 	
-	cout << "\nSorted array Using Insertion Sort (Time Complexity O(n)): " <<endl;
+	cout << "\nSorted array Using Insertion Sort (Time Complexity O(n*n)): " <<endl;
 	insertionSort(arr, n);
 	
 	return 0;
