@@ -15,7 +15,7 @@ public:
   
 void Graph::addEdge(int v, int w)
 {
-    adj[v].push_back(w); // Add w to v’s list.
+    adj[v].push_back(w); // Add w to vï¿½s list.
 }
   
 void Graph::DFSUtil(int v)
